@@ -14,8 +14,6 @@ const Feed = () => {
       <Post post={nature} profile={milly} text={text1} name={"milly"}/>
       <Post post={silvio} profile={silvio} text={text2} name={"Silvio Gerinald"}/>
       <Post post={sagitario} profile={profile} text={text3} name={"Deny Santoz"}/>
-
-
     </Box>
   )
 }

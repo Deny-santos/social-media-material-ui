@@ -9,7 +9,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import ModeNightIcon from '@mui/icons-material/ModeNight';
 
-const Sidbar = () => {
+const Sidbar = ({mode, setMode}) => {
   return (
     <Box flex={1} p={2} sx={{display: {xs: "none", sm: "block"}}}>
        <List sx={{position: "fixed"}}>
@@ -81,7 +81,7 @@ const Sidbar = () => {
               <ListItemIcon>
                 <ModeNightIcon/>
               </ListItemIcon>
-              <Switch />
+              <Switch onChange={() => setMode(mode === "light" ? "dark": "light")} />
             </ListItemButton>
           </ListItem>
        </List>
